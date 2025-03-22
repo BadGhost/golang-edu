@@ -20,7 +20,7 @@ type application struct {
 func main() {
     addr := flag.String("addr", ":4000", "HTTP network address")
     // Define a new command-line flag for the MySQL DSN string.
-    dsn := flag.String("dsn", "web:pass@/snippetbox?parseTime=true", "MySQL data source name")
+    dsn := flag.String("dsn", "root:@/snippetbox?parseTime=true", "MySQL data source name")
     flag.Parse()
 
     logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
