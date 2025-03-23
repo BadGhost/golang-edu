@@ -12,7 +12,7 @@ import (
     // a Module) so that the import statement looks like this:
     // "{your-module-path}/internal/models". If you can't remember what module path you 
     // used, you can find it at the top of the go.mod file.
-    "snippetbox.alexedwards.net/internal/models" 
+    "snippet.is.edu/internal/models" 
 
     _ "github.com/go-sql-driver/mysql"
 )
