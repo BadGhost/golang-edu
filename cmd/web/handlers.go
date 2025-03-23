@@ -19,7 +19,7 @@ func (app *application) home(w http.ResponseWriter, r *http.Request) {
     }
 
     // Use the new render helper.
-    app.render(w, r, http.StatusOK, "home.tmpl", templateData{
+    app.render(w, r, http.StatusOK, "home.html", templateData{
         Snippets: snippets,
     })
 }
@@ -42,7 +42,7 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
     }
 
     // Use the new render helper.
-    app.render(w, r, http.StatusOK, "view.tmpl", templateData{
+    app.render(w, r, http.StatusOK, "view.html", templateData{
         Snippet: snippet,
     })
 }
